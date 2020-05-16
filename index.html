@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Website Information for SEO-->
+    <title>Fitness Edge - Homepage</title>
+    <meta name="Author" content="Fitness Edge" />
+    <meta name="Description" content="Fitness Edge is a place where you will love to loose while workout" />
+    <meta name="Keywords" content="Fitness Edge, Fitness Edge, Fitness Edge, Gyms Near me, Online Gym Websites" />
+
+    <!-- Schema.org markup for Google+ -->
+    <meta itemprop="name" content="Fitness Edge">
+    <meta itemprop="description" content="Fitness Edge is a place where you will love to loose while workout">
+    <meta itemprop="image" content="https://fitness-edge.theroushan.tech">
+
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="Fitness-edge.theroushan.tech">
+    <meta name="twitter:title" content="Fitness Edge">
+    <meta name="twitter:description" content="Fitness Edge is a place where you will love to loose while workout">
+    <meta name="twitter:creator" content="@dhruvGoel">
+    <meta name="twitter:image" content="https://fitness-edge.theroushan.tech">
+
+    <!-- Open Graph data -->
+    <meta property="og:title" content="Fitness Edge" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://Fitness-edge.theroushan.tech" />
+    <meta property="og:image" content="https://fitness-edge.theroushan.tech" />
+    <meta property="og:description" content="Fitness Edge is a place where you will love to loose while workout" />
+    <meta property="og:site_name" content="Fitness Edge" />
+
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="css/modal_style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="all">
+    <link rel="stylesheet" type="text/css" href="css/hover.css" media="all">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+    <!---It contains Header and navgation menu for the website-->
+    <aside>
+        <div>
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="#"><i class="fa fa-youtube"></i></a>
+            <a href="#"><i class="fa fa-whatsapp"></i></a>
+        </div>
+    </aside>
+
+    <div class="cd-signin-modal js-signin-modal">
+        <!-- this is the entire modal form, including the background -->
+        <div class="cd-signin-modal__container">
+            <!-- this is the container wrapper -->
+            <ul class="cd-signin-modal__switcher js-signin-modal-switcher js-signin-modal-trigger">
+                <li><a href="#0" data-signin="login" data-type="login">Sign in</a></li>
+                <li><a href="#0" data-signin="signup" data-type="signup">New account</a></li>
+            </ul>
+
+            <div class="cd-signin-modal__block js-signin-modal-block" data-type="login">
+                <!-- log in form -->
+                <form class="cd-signin-modal__form">
+                    <p class="cd-signin-modal__fieldset">
+                        <label class="cd-signin-modal__label cd-signin-modal__label--email cd-signin-modal__label--image-replace" for="signin-email">E-mail</label>
+                        <input class="cd-signin-modal__input cd-signin-modal__input--full-width cd-signin-modal__input--has-padding cd-signin-modal__input--has-border" id="signin-email" type="email" placeholder="E-mail">
+                        <span class="cd-signin-modal__error">Error message here!</span>
+                    </p>
+
+                    <p class="cd-signin-modal__fieldset">
+                        <label class="cd-signin-modal__label cd-signin-modal__label--password cd-signin-modal__label--image-replace" for="signin-password">Password</label>
+                        <input class="cd-signin-modal__input cd-signin-modal__input--full-width cd-signin-modal__input--has-padding cd-signin-modal__input--has-border" id="signin-password" type="text" placeholder="Password">
+                        <a href="#0" class="cd-signin-modal__hide-password js-hide-password">Hide</a>
+                        <span class="cd-signin-modal__error">Error message here!</span>
+                    </p>
+
+                    <p class="cd-signin-modal__fieldset">
+                        <input type="checkbox" id="remember-me" checked class="cd-signin-modal__input ">
+                        <label for="remember-me">Remember me</label>
+                    </p>
+
+                    <p class="cd-signin-modal__fieldset">
+                        <input class="cd-signin-modal__input cd-signin-modal__input--full-width" type="submit" value="Login" onclick="login();">
+                    </p>
+                </form>
+
+                <p class="cd-signin-modal__bottom-message js-signin-modal-trigger"><a href="#0" data-signin="reset">Forgot your password?</a></p>
+            </div>
+            <!-- cd-signin-modal__block -->
+
+            <div class="cd-signin-modal__block js-signin-modal-block" data-type="signup">
+                <!-- sign up form -->
+                <form class="cd-signin-modal__form">
+                    <p class="cd-signin-modal__fieldset">
+                        <label class="cd-signin-modal__label cd-signin-modal__label--username cd-signin-modal__label--image-replace" for="signup-username">Username</label>
+                        <input class="cd-signin-modal__input cd-signin-modal__input--full-width cd-signin-modal__input--has-padding cd-signin-modal__input--has-border" id="signup-username" type="text" placeholder="Username">
+                        <span class="cd-signin-modal__error">Error message here!</span>
+                    </p>
+
+                    <p class="cd-signin-modal__fieldset">
+                        <label class="cd-signin-modal__label cd-signin-modal__label--email cd-signin-modal__label--image-replace" for="signup-email">E-mail</label>
+                        <input class="cd-signin-modal__input cd-signin-modal__input--full-width cd-signin-modal__input--has-padding cd-signin-modal__input--has-border" id="signup-email" type="email" placeholder="E-mail">
+                        <span class="cd-signin-modal__error">Error message here!</span>
+                    </p>
+
+                    <p class="cd-signin-modal__fieldset">
+                        <label class="cd-signin-modal__label cd-signin-modal__label--password cd-signin-modal__label--image-replace" for="signup-password">Password</label>
+                        <input class="cd-signin-modal__input cd-signin-modal__input--full-width cd-signin-modal__input--has-padding cd-signin-modal__input--has-border" id="signup-password" type="text" placeholder="Password">
+                        <a href="#0" class="cd-signin-modal__hide-password js-hide-password">Hide</a>
+                        <span class="cd-signin-modal__error">Error message here!</span>
+                    </p>
+
+                    <p class="cd-signin-modal__fieldset">
+                        <input type="checkbox" id="accept-terms" class="cd-signin-modal__input ">
+                        <label for="accept-terms">I agree to the <a href="#0">Terms</a></label>
+                    </p>
+
+                    <p class="cd-signin-modal__fieldset">
+                        <input class="cd-signin-modal__input cd-signin-modal__input--full-width cd-signin-modal__input--has-padding" type="submit" value="Create account" id="registerNewUser-btn">
+                    </p>
+                </form>
+            </div>
+            <!-- cd-signin-modal__block -->
+
+            <div class="cd-signin-modal__block js-signin-modal-block" data-type="reset">
+                <!-- reset password form -->
+                <p class="cd-signin-modal__message">Lost your password? Please enter your email address. You will receive a link to create a new password.</p>
+
+                <form class="cd-signin-modal__form">
+                    <p class="cd-signin-modal__fieldset">
+                        <label class="cd-signin-modal__label cd-signin-modal__label--email cd-signin-modal__label--image-replace" for="reset-email">E-mail</label>
+                        <input class="cd-signin-modal__input cd-signin-modal__input--full-width cd-signin-modal__input--has-padding cd-signin-modal__input--has-border" id="reset-email" type="email" placeholder="E-mail">
+                        <span class="cd-signin-modal__error">Error message here!</span>
+                    </p>
+
+                    <p class="cd-signin-modal__fieldset">
+                        <input class="cd-signin-modal__input cd-signin-modal__input--full-width cd-signin-modal__input--has-padding" type="submit" value="Reset password">
+                    </p>
+                </form>
+
+                <p class="cd-signin-modal__bottom-message js-signin-modal-trigger"><a href="#0" data-signin="login">Back to log-in</a></p>
+            </div>
+            <!-- cd-signin-modal__block -->
+            <a href="#0" class="cd-signin-modal__close js-close">Close</a>
+        </div>
+        <!-- cd-signin-modal__container -->
+    </div>
+
+    <header id="Header">
+        <img src="images/logo.png" alt="" class="logo">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#feature">Features</a></li>
+            <li><a href="index.html#timetable">Timetable</a></li>
+            <li><a href="index.html#contact">Contact Us</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="nutrition.html">Nutrition</a></li>
+        </ul>
+        <nav class="cd-main-nav js-main-nav">
+            <ul class="cd-main-nav__list js-signin-modal-trigger">
+                <!-- inser more links here -->
+                <li id="login-btn" style="display: none;"><a class="cd-main-nav__item cd-main-nav__item--signin btn round btn-dark" href="#login" data-signin="login">Sign in</a></li>
+                <li id="signup-btn" style="display: none;"><a class="cd-main-nav__item cd-main-nav__item--signup btn round btn-orange" href="#signup" data-signin="signup">Sign up</a></li>
+                <li id="user-avatar" style="display: none;">
+                    <a href="edit-profile.html" id="username-display" style="text-decoration:underline" class="btn round">Username</a>
+                </li>
+                <li id="logout-btn" style="display: none;">
+                    <a href="" class="btn round" onclick="logout();">Logout</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--It contains the Banner for the Website-->
+    <section class="banner" id=home data-aos="slide-down" data-aos-delay="100" data-aos-duration="1000">
+        <div class="content" data-aos="fade-down" data-aos-delay="2500" data-aos-duration="1000">
+            <h2>DISCOVER YOUR POTENTIAL</h2>
+            <p>Do you know how many calories are in butter and cheese and ice cream? Would you get your dog up in the morning for a cup of coffee and a donut?</p>
+            <div class="cta buttons">
+                <button class="btn"><a href="">LEARN MORE</a></button>
+                <button class="btn"><a href="#membership">VIEW PLANS</a></button>
+            </div>
+        </div>
+        <p class="transparent text" data-aos="slide-right" data-aos-delay="1000" data-aos-duration="2000">FITNESS</p>
+    </section>
+
+    <!--Tips For Users Content-->
+    <section class="tips-container">
+        <h1>MAXIMIZE YOUR WORKOUT</h1>
+        <hr>
+        <p>Here are some tips from us to keep yourself healthy in Lockdown Period</p>
+        <dic class="content">
+            <div class="box" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000">
+                <img src="images/Gallery/person-eating-healthy-food.jpg" alt="">
+                <h3>HEALTHY DIET</h3>
+                <article>Healty Diet keeps you fit and takes care of your health. Try to eat home made food, consumes all nutrition and vitamins in your daily diet.</article>
+            </div>
+            <div class="box" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">
+                <img src="images/Gallery/dumbbell-circuit.jpg" alt="">
+                <h3>REGULAR WORKOUT</h3>
+                <article>Physically active individuals have a much better health outlook than their sedentary peers.A formal workout is not necessary to have these benefits</article>
+            </div>
+            <div class="box" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">
+                <img src="images/Gallery/prd_122024_c_l.jpg" alt="">
+                <h3>TAKE MUSCLE BUILDER</h3>
+                <article> Muscle Builder is a powerful pre workout pill that features a scientifically dosed key ingredient that will help you boost strength and performance.</article>
+            </div>
+        </dic>
+    </section>
+    <!-- Membership Offers  -->
+    <section class="membership" id="membership">
+        <h1 class="heading">PICK YOUR MEMBERSHIP</h1>
+        <div class="offer-box">
+            <div class="price-card hvr-grow" data-aos="fade-in" data-aos-delay="100" data-aos-duration="1000">
+                <div class="pricetag">
+                    <h1 class="price">Rs. 299 <span>/Month</span></h1>
+                    <h1 class="offer-name">FREE</h1>
+                </div>
+                <div class="benefits">
+                    <p>4 days a week</p>
+                    <hr>
+                    <p>Dedicated Trainer Allocated</p>
+                    <hr>
+                    <p>No Swimming Pool</p>
+                    <hr>
+                    <p>Morning and Evening Batches</p>
+                    <hr>
+                    <p>1 Hour Workout</p>
+                    <hr>
+                </div>
+                <button class="btn buy">JOIN NOW</button>
+            </div>
+            <div class="hvr-grow price-card" data-aos="fade-in" data-aos-delay="200" data-aos-duration="1000">
+                <div class="pricetag">
+                    <h1 class="price">Rs. 999<span>/Month</span></h1>
+                    <h1 class="offer-name">STANDARD</h1>
+                </div>
+                <div class="benefits">
+                    <p>6 days a week</p>
+                    <hr>
+                    <p>Dedicated Trainer Allocated</p>
+                    <hr>
+                    <p>Swimming Pool Included</p>
+                    <hr>
+                    <p>Morning and Evening Batches</p>
+                    <hr>
+                    <p>Yoga Included</p>
+                    <hr>
+                    <p>Karate Included</p>
+                    <hr>
+                </div>
+                <button class="btn buy">JOIN NOW</button>
+            </div>
+            <div class="price-card hvr-grow" data-aos="fade-in" data-aos-delay="300" data-aos-duration="1000">
+                <div class="pricetag">
+                    <h1 class="price">Rs. 1299<span>/Month</span></h1>
+                    <h1 class="offer-name">PREMIER</h1>
+                </div>
+                <div class="benefits">
+                    <p>24/7 days a week</p>
+                    <hr>
+                    <p>Personal Trainer Allocated</p>
+                    <hr>
+                    <p>Swimming Pool Included</p>
+                    <hr>
+                    <p>Morning and Evening Batches</p>
+                    <hr>
+                    <p>Yoga Included</p>
+                    <hr>
+                    <p>Karate Included</p>
+                    <hr>
+                    <p>Full Service </p>
+                    <hr>
+                </div>
+                <button class="btn buy">JOIN NOW</button>
+            </div>
+        </div>
+    </section>
+
+    <!--It contains the About US Intro-->
+    <section class="about-us" id="about" data-aos="fade-in">
+        <div class="content" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+            <h3>FITNESS EDGE</h3>
+            <p>We want to make health and fitness available to everyone, whatever your lifestyle. That’s why we’ve created a gym at a great price that’s always open. We’re making sure the fitness equipment is world class, while saving on fussy extras. We
+                want to help you live a fit and healthy lifestyle! We do this by providing you the most suitable equipment for your body workout, keeping your budget, lifestyle and fitness goals in mind. We have a wide range of gym equipment, with strength
+                equipment, cardio, cross training and so much more. Our awesome team is always keen to help. At Fitness Edge, we believe that building a positive culture is incredibly important. The business is underpinned by six core values which speak
+                of our commitment to our customers. We believe in encouraging, supporting, challenging, learning and growing to be the best. At Fitness Edge, every morsel of feedback is a nugget of shiny gold because it gives us the opportunity to provide
+                the best trainings to our valuable Customers.
+            </p>
+        </div>
+    </section>
+
+
+    <section class="features" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000" id="feature">
+        <h2 class="text-bold">SERVICES</h2>
+        <h2>WE OFFER</h2>
+        <div class="container">
+            <div class="card hvr-hang" id="card-1">
+                <img src="images/gym.png" alt="">
+                <h2>Weight Classes</h2>
+                <p>We wants Women Empowerment. We Provides Best Workout Guidance for Women and Women Personal Trainers.
+                </p>
+            </div>
+            <div class="card hvr-hang" id="card-2">
+                <img src="images/patent.png" alt="">
+                <h2>Cerified Trainers</h2>
+                <p>We have Certified Gym Trainers around all over the India. Thus our service is 100% Certified and Genuine.
+                </p>
+            </div>
+            <div class="card hvr-hang" id="card-3">
+                <img src="images/transfer.png" alt="">
+                <h2>Customer Satisfaction</h2>
+                <p>We Provides 30 Days Money Back Guarantee. Incase you feel that It's not beneficial or trainig is not sufficient.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!--Class Schedule at GYM-->
+    <section class="timetable" style="overflow-x:auto;" id="timetable">
+        <h1>CLASS <span>SCHEDULE</span> AT GYM</h1>
+        <table>
+            <tr class="table-heading">
+                <th scope="col">&nbsp;</th>
+                <th scope="col">Sunday</th>
+                <th scope="col">Monday</th>
+                <th scope="col">Tuesday</th>
+                <th scope="col">Wednesday</th>
+                <th scope="col">Thursday</th>
+                <th scope="col">Friday</th>
+                <th scope="col">Saturday</th>
+            </tr>
+            <tr>
+                <th scope="row">5:00am</th>
+                <td class="filled">
+                    <div class="period">
+                        <p class="subject" style="font-weight: 500; font-size: 18px;">KARATE</p>
+                        <p class="timing" style="font-size: 12px;">5:00am - 7:00am</p>
+                    </div>
+                </td>
+                <td class="filled">
+                    <div class="period">
+                        <p class="subject" style="font-weight: 500; font-size: 18px;">BODY BUILDING</p>
+                        <p class="timing" style="font-size: 12px;">5:00am - 6:00am</p>
+                    </div>
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th scope="row">06:30am</th>
+                <td></td>
+                <td></td>
+                <td class="filled">
+                    <div class="period">
+                        <p class="subject" style="font-weight: 500; font-size: 18px;">BODY BUILDING</p>
+                        <p class="timing" style="font-size: 12px;">12:00am - 2:00am</p>
+                    </div>
+                </td>
+                <td></td>
+                <td></td>
+                <td class="filled">
+                    <div class="period">
+                        <p class="subject" style="font-weight: 500; font-size: 18px;">BODY BUILDING</p>
+                        <p class="timing" style="font-size: 12px;">12:00am - 2:00am</p>
+                    </div>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <th scope="row">08:00am</th>
+                <td></td>
+                <td></td>
+                <td class="filled">
+                    <div class="period">
+                        <p class="subject" style="font-weight: 500; font-size: 18px;">BODY BUILDING</p>
+                        <p class="timing" style="font-size: 12px;">12:00am - 2:00am</p>
+                    </div>
+                </td>
+                <td class="filled">
+                    <div class="period">
+                        <p class="subject" style="font-weight: 500; font-size: 18px;">BODY BUILDING</p>
+                        <p class="timing" style="font-size: 12px;">12:00am - 2:00am</p>
+                    </div>
+                </td>
+                <td></td>
+                <td class="filled">
+                    <div class="period">
+                        <p class="subject" style="font-weight: 500; font-size: 18px;">BODY BUILDING</p>
+                        <p class="timing" style="font-size: 12px;">12:00am - 2:00am</p>
+                    </div>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <th scope="row">09:00am</th>
+                <td class="filled">
+                    <div class="period">
+                        <p class="subject" style="font-weight: 500; font-size: 18px;">BODY BUILDING</p>
+                        <p class="timing" style="font-size: 12px;">12:00am - 2:00am</p>
+                    </div>
+                </td>
+                <td></td>
+                <td class="filled">
+                    <div class="period">
+                        <p class="subject" style="font-weight: 500; font-size: 18px;">BODY BUILDING</p>
+                        <p class="timing" style="font-size: 12px;">12:00am - 2:00am</p>
+                    </div>
+                </td>
+                <td></td>
+                <td class="filled">
+                    <div class="period">
+                        <p class="subject" style="font-weight: 500; font-size: 18px;">BODY BUILDING</p>
+                        <p class="timing" style="font-size: 12px;">12:00am - 2:00am</p>
+                    </div>
+                </td>
+                <td class="filled">
+                    <div class="period">
+                        <p class="subject" style="font-weight: 500; font-size: 18px;">BODY BUILDING</p>
+                        <p class="timing" style="font-size: 12px;">12:00am - 2:00am</p>
+                    </div>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <th scope="row">11:00am</th>
+                <td></td>
+                <td class="filled">
+                    <div class="period">
+                        <p class="subject" style="font-weight: 500; font-size: 18px;">BODY BUILDING</p>
+                        <p class="timing" style="font-size: 12px;">12:00am - 2:00am</p>
+                    </div>
+                </td>
+                <td></td>
+                <td class="filled">
+                    <div class="period">
+                        <p class="subject" style="font-weight: 500; font-size: 18px;">BODY BUILDING</p>
+                        <p class="timing" style="font-size: 12px;">12:00am - 2:00am</p>
+                    </div>
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th scope="row">02:00pm</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="filled">
+                    <div class="period">
+                        <p class="subject" style="font-weight: 500; font-size: 18px;">BODY BUILDING</p>
+                        <p class="timing" style="font-size: 12px;">12:00am - 2:00am</p>
+                    </div>
+                </td>
+                <td></td>
+                <td class="filled">
+                    <div class="period">
+                        <p class="subject" style="font-weight: 500; font-size: 18px;">BODY BUILDING</p>
+                        <p class="timing" style="font-size: 12px;">12:00am - 2:00am</p>
+                    </div>
+                </td>
+                <td class="filled">
+                    <div class="period">
+                        <p class="subject" style="font-weight: 500; font-size: 18px;">BODY BUILDING</p>
+                        <p class="timing" style="font-size: 12px;">12:00am - 2:00am</p>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">04:00pm</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="filled">
+                    <div class="period">
+                        <p class="subject" style="font-weight: 500; font-size: 18px;">BODY BUILDING</p>
+                        <p class="timing" style="font-size: 12px;">12:00am - 2:00am</p>
+                    </div>
+                </td>
+                <td class="filled">
+                    <div class="period">
+                        <p class="subject" style="font-weight: 500; font-size: 18px;">BODY BUILDING</p>
+                        <p class="timing" style="font-size: 12px;">12:00am - 2:00am</p>
+                    </div>
+                </td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </section>
+
+    <!--Contact Us-->
+    <section class="contact-us" data-aos="fade-in" data-aos-delay="100" data-aos-duration="500" id="contact">
+        <div class="container2" data-aos="fade-up">
+            <div class="banner2">
+                <img src="images/contact.jpg" alt="">
+                <div>
+                    <h2>Get in Touch with Us</h2>
+                    <h4>Drop us a message and we'll get back to you.</h4>
+                </div>
+            </div>
+            <div class="box2" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                <form action="#">
+                    <div>
+                        <label for="fname">Full Name</label>
+                        <input type="text" name="fname" id="fname" placeholder="e.g. Aman Tandon" required>
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="e.g. ronie23@gmail.com" required>
+                    </div>
+                    <div>
+                        <label for="mobile">Mobile</label>
+                        <input type="number" name="mobile" id="mobile" placeholder="e.g. +916388728098" required>
+                    </div>
+                    <div>
+                        <label for="subject">Subject</label>
+                        <input type="text" name="subect" id="subject" placeholder="e.g. Query for Gym Subscription" required>
+                    </div>
+                    <div>
+                        <label for="message">Message</label>
+                    </div>
+                    <textarea rows="2" cols="80" name="message" id="message" placeholder="Brief your message here" required></textarea>
+                    <input type="submit" class="btn" id="submit-query">
+                </form>
+                <div class="address">
+                    <h3>REACH US ON</h3>
+                    <div>
+                        <i class="fa fa-envelope"></i>
+                        <h4>support@fitnessedge.com</h4>
+                    </div>
+                    <div>
+                        <i class="fa fa-phone"></i>
+                        <h4>+91 63xxxxxx89</h4>
+                    </div>
+                    <div>
+                        <i class="fa fa-map-pin"></i>
+                        <h4>10314, DDA Colony, West Gorakh Park, Shahdara, Delhi, 110032
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Subscribe us for News Letter -->
+    <section class="newsletter">
+        <h1>SUBSCRIBE US FOR NEWSLETTER</h1>
+        <p>We will inform you about our latest posts, news offers and achievements.</p>
+        <form class="input">
+            <input type="email" placeholder="Enter Your Email Id here" id="subscriber-email" required>
+            <button class="btn subscribe" type="submit" id="subscribe-btn">SUBSCRIBE US</button>
+        </form>
+    </section>
+
+    <!--Footer-->
+    <section class="footer">
+        <div class="quick-links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About Us</a></li>
+                <li><a href="index.html#feature">Features</a></li>
+                <li><a href="index.html#contact">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="social-media">
+            <h3>Like Us on</h3>
+            <div>
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-youtube"></i></a>
+                <a href="#"><i class="fa fa-whatsapp"></i></a>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Designed by Dhruv Goel</p>
+            <p>All rights reserved | Dhruv Goel</p>
+        </div>
+
+    </section>
+    <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-functions.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-firestore.js"></script>
+    <script></script>
+    <!-- cd-signin-modal -->
+    <script src="javascript/placeholders.min.js"></script>
+    <!-- polyfill for the HTML5 placeholder attribute -->
+    <script src="javascript/main.js"></script>
+    <script src="javascript/index.js"></script>
+    <!-- Resource JavaScript -->
+    <!--Scripts For Lazy loading Animations-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        window.onscroll = function() {
+            myFunction()
+        };
+
+        // Get the header
+        var header = document.getElementById("Header");
+
+        // Get the offset position of the navbar
+        var sticky = header.offsetTop;
+
+        // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+        function myFunction() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+        }
+    </script>
+    <script>
+        firebase.auth().onAuthStateChanged(function(user) {
+            if (user) {
+                // User is signed in.
+                document.getElementById('login-btn').style.display = "none";
+                document.getElementById('signup-btn').style.display = "none";
+                document.getElementById('logout-btn').style.display = "block";
+                document.getElementById('user-avatar').style.display = "block";
+                document.getElementById('username-display').innerText = user.displayName;
+            } else {
+                // No user is signed in.
+                document.getElementById('logout-btn').style.display = "none";
+                document.getElementById('user-avatar').style.display = "none";
+                document.getElementById('login-btn').style.display = "block";
+                document.getElementById('signup-btn').style.display = "block";
+            }
+        });
+    </script>
+</body>
+
+</html>

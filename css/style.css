@@ -1,0 +1,1087 @@
+/*--------------------------
+Dated : 21/04/2020
+-----------------------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.1s;
+}
+
+html {
+    scroll-behavior: smooth;
+    transition: 0.5s;
+}
+
+body {
+    min-height: 1000px;
+    width: 100%;
+    position: relative;
+}
+
+aside {
+    position: absolute;
+    width: 10px;
+    z-index: 100;
+    left: 0px;
+}
+
+aside div {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 0px 10px 10px 0px;
+    top: 40vh;
+}
+
+aside div a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+aside div i {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    z-index: 200;
+    transition: 0.1s;
+}
+
+header .logo {
+    height: 80px;
+    width: 110px;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li {
+    position: relative;
+    list-style-type: none;
+}
+
+header ul li a {
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: orange;
+    font-weight: 300;
+    transition: 0.5s;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    background-color: white;
+    box-shadow: 0px 1px 10px 1px rgba(0, 0, 0, 0.2);
+    width: 100%
+}
+
+#username-display {
+    background-color: orange;
+    color: white;
+}
+
+.sticky .logo {
+    filter: invert(100%);
+    height: 20px;
+    width: 40px;
+}
+
+.banner {
+    position: relative;
+    transition: 0.5s;
+    width: 100%;
+    height: 780px;
+    background: url('../images/Gallery/caraousel/man-muscular-back.jpg');
+    box-shadow: 0px 1px 10px 1px rgba(0, 0, 0, 0.2);
+    background-size: cover;
+}
+
+.banner .content {
+    padding: 50px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    right: 0px;
+    justify-content: center;
+    top: 350px;
+    flex-direction: column;
+}
+
+.banner .content p {
+    position: relative;
+    color: white;
+    font-weight: 300;
+    width: 600px;
+    line-height: 2px;
+    line-height: 1.2em;
+}
+
+.banner .content h2 {
+    color: rgb(255, 187, 0);
+    position: relative;
+    font-weight: 800;
+    font-size: 60px;
+}
+
+.banner .content .cta {
+    display: flex;
+    flex-direction: row;
+}
+
+.banner .content .buttons .btn {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    font-weight: 300;
+    width: 200px;
+    outline: none;
+    border: none;
+    margin-top: 30px;
+    margin-right: 20px;
+}
+
+.banner .content button a {
+    margin: 0;
+    padding: 5px;
+    font-size: 20px;
+    letter-spacing: 0.01em;
+    color: black;
+    font-weight: 300;
+    text-align: right;
+    text-decoration: none;
+}
+
+.banner .content .cta .btn:hover,
+.banner .content .cta a:hover {
+    color: white;
+    background-color: rgb(250, 101, 46);
+}
+
+.banner p.text {
+    position: absolute;
+    top: 0px;
+    z-index: 100;
+    font-size: 240px;
+    font-weight: 700;
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+
+.transparent {
+    opacity: 0.1;
+}
+
+.banner .box {
+    width: 100px;
+    height: 100px;
+    right: 150px;
+    position: absolute;
+    background: white;
+    box-shadow: inset 10px 0px 10px 1px rgba(0, 0, 0, 0.1);
+}
+
+.top {
+    top: 0px;
+}
+
+
+/*Customizing Tips Section in website */
+
+.tips-container {
+    display: flex;
+    flex-direction: column;
+    padding: 80px 80px;
+    align-items: center;
+}
+
+.tips-container h1 {
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+}
+
+.tips-container hr {
+    border: none;
+    border: 2px solid orangered;
+    width: 200px;
+    margin: 10px 0 20px 0;
+    border-width: 2px;
+    outline: none;
+}
+
+.tips-container .content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.tips-container .box {
+    padding: 10px;
+    width: 25%;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.tips-container .box img {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+.tips-container article {
+    font-size: 14px;
+}
+
+
+/* Customizing Membership Offer Contents*/
+
+.membership {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    padding: 60px 80px;
+    align-items: center;
+}
+
+.membership .heading {
+    color: orange;
+    position: relative;
+    top: -30px;
+    letter-spacing: 0.02em;
+    font-weight: 600;
+    font-size: 45px;
+}
+
+.membership .offer-box {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+}
+
+.membership .offer-box .price-card {
+    background: white;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    align-items: center;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.membership .offer-box .price-card .pricetag {
+    border-radius: 100px;
+    height: 150px;
+    width: 150px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.membership .offer-box .price-card button {
+    background: orange;
+    width: 150px;
+}
+
+.membership .offer-box .price-card:hover .pricetag,
+.membership .offer-box .price-card:hover button {
+    background-color: orangered;
+    color: white;
+}
+
+.membership .offer-box .price-card button:hover {
+    box-shadow: 0px 0px 20px 1px rgba(255, 0, 0, 0.5);
+}
+
+.membership .offer-box .price-card .pricetag h1 {
+    position: relative;
+    display: flex;
+}
+
+.membership .offer-box .price-card .pricetag span {
+    font-size: 12px;
+    position: relative;
+    top: 10px;
+}
+
+.membership .offer-box .price-card .benefits {
+    margin: 20px 0;
+}
+
+.membership .offer-box .price-card .benefits p {
+    margin: 2px;
+}
+
+.membership .offer-box .price-card .benefits hr {
+    border: none;
+    border: 1px solid #f0f0f1;
+}
+
+
+/*Customizing About Us Section*/
+
+.about-us {
+    padding: 20px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+    transition: 0.2s;
+    height: 600px;
+}
+
+.about-us .content {
+    position: relative;
+    padding-top: 8%;
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 50px;
+    justify-content: space-evenly;
+    color: black;
+    transition: 0.2s;
+    opacity: 0.78
+}
+
+.about-us h3 {
+    transition: 0.1s;
+    transform-style: flat;
+    position: relative;
+    font-weight: 500px;
+    color: black;
+    margin-bottom: 20px;
+    font-size: 60px;
+}
+
+.about-us p {
+    font-size: 16px;
+}
+
+
+/* ----------------------------*/
+
+.features {
+    display: flex;
+    width: 100%;
+    position: relative;
+    flex-direction: column;
+    min-height: 600px;
+    background: url(../images/dumbell.jpg) no-repeat;
+    background-size: cover;
+    z-index: 10;
+    background-attachment: fixed;
+    box-shadow: 0px 1px 15px 1px rgba(0, 0, 0, 0.1);
+}
+
+.features>h2 {
+    position: relative;
+    color: white;
+    padding-top: 20px;
+    padding-left: 350px;
+}
+
+.features .text-bold {
+    padding-top: 100px;
+    position: relative;
+    font-size: 60px;
+    padding-left: 200px;
+    line-height: 0;
+    color: orange;
+}
+
+.features .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+}
+
+.features .card {
+    margin: 0px;
+    display: flex;
+    padding: 30px;
+    flex-direction: column;
+    position: relative;
+    width: 28%;
+    justify-content: center;
+    text-align: center;
+    background: WHITE;
+    align-items: center;
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.features .container .card h2 {
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.features .card img {
+    margin-top: 20px;
+    height: 100px;
+    width: 100px;
+    margin-bottom: 50px;
+}
+
+.features .card p {
+    padding-bottom: 50px;
+}
+
+
+/*Styling of Time Table*/
+
+.timetable {
+    width: 100%;
+    display: flex;
+    position: relative;
+    margin-bottom: 100px;
+    padding: 40px;
+    flex-direction: column;
+    color: white;
+    background-image: linear-gradient(to right, orange, orangered);
+}
+
+.timetable h1 {
+    font-size: 45px;
+}
+
+.timetable h1 span {
+    font-size: 50px;
+    color: orangered;
+}
+
+.timetable table {
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    color: white;
+    border: 1px dotted#ddd;
+}
+
+table,
+td,
+tr {
+    border: 1px solid orange;
+}
+
+td,
+tr,
+th {
+    padding: 15px 10px;
+}
+
+th {
+    border: 1px solid white;
+    background-color: orange;
+}
+
+td:hover,
+th:hover {
+    background-color: orange;
+}
+
+.filled {
+    background-color: white;
+    color: black;
+}
+
+
+/*---------------Styling of Contact-Us Section --------------*/
+
+.contact-us {
+    display: flex;
+    position: relative;
+    width: 100%;
+    top: -100px;
+    transition: 0.1s;
+    height: 700px;
+}
+
+.contact-us .container2 {
+    display: flex;
+    position: relative;
+    top: 50px;
+    flex-direction: column;
+    width: 100%;
+    transition: 0.1s;
+}
+
+.contact-us .container2 .banner2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    transition: 0.1s;
+}
+
+.contact-us .container2 .banner2 img {
+    width: 100%;
+    transition: 0.1s;
+}
+
+.contact-us .container2 .banner2 div {
+    width: 100%;
+    position: absolute;
+    color: white;
+    top: 30px;
+}
+
+.contact-us .container2 .banner2 div h2 {
+    position: relative;
+    display: flex;
+    font-size: 40px;
+    transition: 0.1s;
+    justify-content: center;
+}
+
+.contact-us .container2 .banner2 div h4 {
+    position: relative;
+    display: flex;
+    font-size: 20px;
+    transition: 0.1s;
+    justify-content: center;
+    font-weight: 300;
+}
+
+.contact-us .container2 .box2 {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    margin-left: 100px;
+    margin-right: 100px;
+    background: white;
+    box-shadow: 0px 1px 20px 2px rgba(0, 0, 0, 0.1);
+    top: 150px;
+    transition: 0.1s;
+    border-radius: 5px;
+}
+
+.contact-us .container2 .box2 form {
+    display: flex;
+    position: relative;
+    transition: 0.1s;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 50px;
+}
+
+.contact-us .container2 .box2 form div {
+    display: flex;
+    padding: 10px;
+    width: 50%;
+    transition: 0.1s;
+    position: relative;
+    flex-direction: column;
+}
+
+.contact-us .container2 .box2 form div label {
+    display: flex;
+    position: relative;
+    transition: 0.1s;
+    font-size: 13px;
+}
+
+.contact-us .container2 .box2 form div input {
+    display: flex;
+    position: relative;
+    border: none;
+    padding: 5px;
+    outline: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.contact-us .container2 .box2 form div input::placeholder {
+    position: relative;
+    opacity: 0.5;
+}
+
+.contact-us .container2 .box2 textarea {
+    display: flex;
+    position: relative;
+    border: none;
+    outline: none;
+    transition: 0.1s;
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.contact-us .container2 .box2 textarea::placeholder {
+    opacity: 0.5;
+}
+
+.contact-us .container2 .box2 .btn {
+    display: flex;
+    position: relative;
+    width: 200px;
+    margin-left: 20px;
+    margin-top: 50px;
+    padding: 10px;
+    transition: 0.1s;
+    justify-content: center;
+    border: none;
+    outline: none;
+    background-image: linear-gradient(to right, orange, orangered);
+    font-size: 15px;
+    border-radius: 5px;
+    color: white;
+}
+
+.contact-us .container2 .box2 .btn:hover {
+    background-image: linear-gradient(to right, orangered, rgb(163, 4, 4));
+}
+
+.contact-us .container2 .box2 .address {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    padding: 50px;
+    color: white;
+    font-size: 30px;
+    text-align: left;
+    justify-content: center;
+    border-radius: 0px 5px 5px 0px;
+    background-image: linear-gradient(to right, orange, orangered);
+}
+
+.contact-us .container2 .box2 .address div {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    color: white;
+}
+
+.contact-us .container2 .box2 .address div i {
+    position: relative;
+    font-size: 20px;
+    padding-top: 30px;
+    margin-right: 20px;
+}
+
+.contact-us .container2 .box2 .address div h4 {
+    position: relative;
+    font-size: 15px;
+    padding-top: 25px;
+    font-style: normal;
+    font-weight: 300;
+    margin-right: 20px;
+}
+
+
+/*Subscribe for Newsletter Section*/
+
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    padding: 80px 100px;
+    align-items: center;
+    background: url("../images/Gallery/caraousel/muscular-guy-six-pack-HD.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+    height: 400px;
+    background-position: center;
+}
+
+.newsletter h1 {
+    font-size: 45px;
+}
+
+.newsletter .input {
+    align-items: center;
+    margin-top: 20px;
+    background: white;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsletter .input input {
+    outline: none;
+    border: none;
+    padding-right: 10px;
+    width: 300px;
+    font-size: 16px;
+}
+
+.newsletter .input .subscribe {
+    background: black;
+    color: white;
+    width: 150px;
+}
+
+.newsletter .input .subscribe:hover {
+    background: orangered;
+}
+
+
+/*------------------- Footer -----------------*/
+
+.footer {
+    background-image: linear-gradient(to right, orange, orangered);
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 100px;
+    padding-left: 100px;
+}
+
+.footer .social-media {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+}
+
+.footer .social-media h3 {
+    color: white;
+    padding: 10px;
+}
+
+.footer .social-media div {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.footer .social-media div a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.footer .quick-links {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+}
+
+.footer .quick-links h3 {
+    color: white;
+    padding: 10px;
+}
+
+.footer .quick-links ul {
+    display: flex;
+    position: relative;
+    list-style: none;
+}
+
+.footer .quick-links ul li {
+    padding: 10px;
+}
+
+.footer .quick-links ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer .copyright {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+
+/* For about us Page */
+
+.container-big {
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    position: relative;
+    top: 50px;
+}
+
+.gray {
+    background-color: #f0f0f1;
+}
+
+.orangered {
+    color: orangered;
+}
+
+.container .main {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.main .label {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-between;
+    padding: 25px 100px;
+}
+
+.label .box {
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+}
+
+.center {
+    text-align: center;
+}
+
+.box .name {
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 0.08em;
+}
+
+.heading {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 5px 0px;
+}
+
+.featuring {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 100px;
+}
+
+.big {
+    font-size: 32px;
+    letter-spacing: 0.02em;
+}
+
+.large {
+    font-size: 50px;
+}
+
+.story {
+    display: flex;
+    height: 380px;
+    width: 45%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
+
+article {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.awards {
+    padding: 20px 100px;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.awards img {
+    width: 25%;
+}
+
+.values {
+    background-color: #f0f0f1;
+    display: flex;
+    flex-direction: row;
+    padding: 40px 100px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.values h2 {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.values .content {
+    flex-direction: column;
+    height: max-content;
+    width: 33%;
+    margin: 10px 0px;
+    text-align: center;
+}
+
+.our-team {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 52px;
+    width: 100%;
+    margin-top: 0px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 100px;
+    background: url(../images/Gallery/shutterstock_255667762.jpg);
+    background-attachment: scroll;
+    background-position: center;
+}
+
+.our-team .content {
+    display: flex;
+    width: 33%;
+    color: white;
+    padding: 30px;
+    flex-direction: column;
+}
+
+.main-heading {
+    position: absolute;
+    top: 120px;
+    font-size: 100px;
+    color: white;
+    z-index: 100;
+    left: 450px;
+}
+
+.btn {
+    padding: 8px;
+    background-color: white;
+    color: black;
+    outline: none;
+    font-size: 18px;
+    border: none;
+    box-shadow: inset 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
+}
+
+.round {
+    width: 200px;
+    border-radius: 10px;
+}
+
+.btn-dark {
+    background-color: orangered;
+    color: white;
+}
+
+.btn-orange {
+    background-color: orange;
+    color: white;
+}
+
+.transparent-bg {
+    background-color: rgba(255, 109, 42, 0.8);
+}
+
+
+/******************----CSS for the Nutrition Blocks------------**********/
+
+.nutrition {
+    display: flex;
+    width: 100%;
+    margin-top: 100px;
+    padding: 80px 100px 20px 100px;
+    margin-bottom: 100px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nutrition>h1 {
+    font-size: 40px;
+    color: orange;
+    text-align: center;
+}
+
+.nutrition>hr {
+    border: none;
+    border: 1px solid orange;
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+.nutrition .card:nth-child(odd) {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    height: 300px;
+    height: max-content;
+    background: orange;
+    margin: 20px 0px;
+}
+
+.nutrition .card:nth-child(even) {
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+    height: max-content;
+    background: #ddd;
+    margin: 20px 0px;
+}
+
+.nutrition .card img {
+    width: 450px;
+    height: 100%;
+    align-self: center;
+}
+
+.nutrition .card .content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    background-color: rgb(250, 250, 250);
+}
